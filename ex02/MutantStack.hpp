@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   MutantStack.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bgretic <bgretic@student.42vienna.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/18 16:08:55 by bgretic           #+#    #+#             */
+/*   Updated: 2026/05/18 16:08:56 by bgretic          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef MUTANTSTACK_HPP
 # define MUTANTSTACK_HPP
 
@@ -7,7 +19,7 @@ template <typename T>
 class MutantStack: public std::stack<T>
 {
 	public:
-	
+
 		MutantStack();
 		MutantStack(const MutantStack<T> &other);
 		MutantStack<T>	&operator=(const MutantStack<T> &other);

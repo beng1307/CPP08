@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   MutantStack.tpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bgretic <bgretic@student.42vienna.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/18 16:08:58 by bgretic           #+#    #+#             */
+/*   Updated: 2026/05/18 16:08:59 by bgretic          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "MutantStack.hpp"
 
 template <typename T>
-MutantStack<T>::MutantStack() : std::stack<T>()
+MutantStack<T>::MutantStack(): std::stack<T>()
 {
 	return ;
 }
 
 template <typename T>
-MutantStack<T>::MutantStack(const MutantStack<T> &other) : std::stack<T>(other)
+MutantStack<T>::MutantStack(const MutantStack<T> &other): std::stack<T>(other)
 {
 	return ;
 }
